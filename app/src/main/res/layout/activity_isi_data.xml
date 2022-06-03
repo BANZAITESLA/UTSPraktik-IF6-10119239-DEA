@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 03/06/2022 | 10119239 | DEA INESIA SRI UTAMI | IF6 -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IsiDataActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dimen16">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_isi_data"
+            style="@style/Lato20Gray800"
+            android:layout_marginBottom="@dimen/dimen24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_info_isi_data"
+            android:padding="@dimen/dimen16"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/dimen24">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info"
+                style="@style/RobotoBold12Gray800"
+                android:layout_marginBottom="@dimen/dimen12"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_isi_data"
+                style="@style/RobotoReg12Gray600"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginBottom="@dimen/dimen16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jenis_tes"
+                style="@style/RobotoBold10Gray800"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/required_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                style="@style/RobotoBold10GreenJDS"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_jenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginBottom="@dimen/dimen24">
+            <RadioButton
+                android:id="@+id/rapid"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24"
+                android:text="@string/rapid"
+                style="@style/RobotoReg14Gray800"
+                android:paddingLeft="@dimen/dimen16"
+                android:layout_marginBottom="@dimen/dimen16"
+                android:theme="@style/theme_radio"/>
+            <RadioButton
+                android:id="@+id/pcr"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24"
+                android:text="@string/pcr"
+                style="@style/RobotoReg14Gray800"
+                android:paddingLeft="@dimen/dimen16"
+                android:theme="@style/theme_radio"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginBottom="@dimen/dimen8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tgl_konfir"
+                style="@style/RobotoBold10Gray800"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/required_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                style="@style/RobotoBold10GreenJDS"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tgl_konfir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ph_tgl"
+            style="@style/RobotoReg14Gray600"
+            android:padding="@dimen/dimen12"
+            android:background="@drawable/bg_edit_text"
+            android:inputType="date"
+            android:drawableRight="@drawable/ic_baseline_date_range_24"
+            android:layout_marginBottom="@dimen/dimen24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nik"
+            style="@style/RobotoBold10Gray800"
+            android:layout_marginBottom="@dimen/dimen8"/>
+
+        <EditText
+            android:id="@+id/nik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ph_nik"
+            style="@style/RobotoReg14Gray600"
+            android:padding="@dimen/dimen12"
+            android:background="@drawable/bg_edit_text"
+            android:inputType="number"
+            android:layout_marginBottom="@dimen/dimen24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginBottom="@dimen/dimen8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                style="@style/RobotoBold10Gray800"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/required_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                style="@style/RobotoBold10GreenJDS"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ph_nama"
+            style="@style/RobotoReg14Gray600"
+            android:padding="@dimen/dimen12"
+            android:background="@drawable/bg_edit_text"
+            android:inputType="text"
+            android:layout_marginBottom="@dimen/dimen24"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginBottom="@dimen/dimen8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tgl_lahir"
+                style="@style/RobotoBold10Gray800"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/required_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                style="@style/RobotoBold10GreenJDS"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tgl_lhr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ph_tgl"
+            style="@style/RobotoReg14Gray600"
+            android:padding="@dimen/dimen12"
+            android:background="@drawable/bg_edit_text"
+            android:inputType="date"
+            android:drawableRight="@drawable/ic_baseline_date_range_24"
+            android:layout_marginBottom="@dimen/dimen24"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginBottom="@dimen/dimen8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jenis_kelamin"
+                style="@style/RobotoBold10Gray800"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/required_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                style="@style/RobotoBold10GreenJDS"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_jk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginBottom="@dimen/dimen24">
+            <RadioButton
+                android:id="@+id/lk"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24"
+                android:text="@string/lk"
+                style="@style/RobotoReg14Gray800"
+                android:paddingLeft="@dimen/dimen16"
+                android:layout_marginBottom="@dimen/dimen16"
+                android:theme="@style/theme_radio"/>
+            <RadioButton
+                android:id="@+id/pr"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24"
+                android:text="@string/pr"
+                style="@style/RobotoReg14Gray800"
+                android:paddingLeft="@dimen/dimen16"
+                android:theme="@style/theme_radio"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center|left"
+            android:layout_marginBottom="@dimen/dimen8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hubungan"
+                style="@style/RobotoBold10Gray800"/>
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:src="@drawable/required_circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/required"
+                style="@style/RobotoBold10GreenJDS"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_hub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginBottom="@dimen/dimen24">
+            <RadioButton
+                android:id="@+id/ortu"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24"
+                android:text="@string/org_tua"
+                style="@style/RobotoReg14Gray800"
+                android:paddingLeft="@dimen/dimen16"
+                android:layout_marginBottom="@dimen/dimen16"
+                android:theme="@style/theme_radio"/>
+            <RadioButton
+                android:id="@+id/su_is"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24"
+                android:text="@string/suami_istri"
+                style="@style/RobotoReg14Gray800"
+                android:paddingLeft="@dimen/dimen16"
+                android:layout_marginBottom="@dimen/dimen16"
+                android:theme="@style/theme_radio"/>
+            <RadioButton
+                android:id="@+id/anak"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24"
+                android:text="@string/anak"
+                style="@style/RobotoReg14Gray800"
+                android:paddingLeft="@dimen/dimen16"
+                android:layout_marginBottom="@dimen/dimen16"
+                android:theme="@style/theme_radio"/>
+            <RadioButton
+                android:id="@+id/kerabat"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dimen24"
+                android:text="@string/kerabat"
+                style="@style/RobotoReg14Gray800"
+                android:paddingLeft="@dimen/dimen16"
+                android:theme="@style/theme_radio"/>
+        </RadioGroup>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tnc"
+            android:layout_marginBottom="@dimen/dimen32"
+            style="@style/RobotoMed10Gray600"
+            android:theme="@style/theme_check"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/next"
+            android:background="@drawable/bg_next"
+            android:textAllCaps="false"
+            android:padding="@dimen/dimen12"
+            style="@style/RobotoBold14White"
+            android:layout_marginBottom="@dimen/dimen32"/>
+
+    </LinearLayout>
+
+</ScrollView>
